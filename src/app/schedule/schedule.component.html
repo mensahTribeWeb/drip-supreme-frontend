@@ -1,0 +1,14 @@
+<!-- schedule.component.html -->
+<h2>Game Schedule</h2>
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Time</th>
+    <th>Teams</th>
+  </tr>
+  <tr *ngFor="let match of schedule">
+    <td>{{ match.date }}</td>
+    <td>{{ match.time }}</td>
+    <td>{{ match.teams }}</td>
+  </tr>
+</table>
